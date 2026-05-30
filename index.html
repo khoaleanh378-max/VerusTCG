@@ -1,11 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VerusTCG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VerusTCG — Every Pack. Every Game.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Verus<span>TCG</span></a>
+  <ul class="nav-links">
+    <li><a href="#packs">Shop</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#stats">About</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-btn">Sign Up Free</button>
+  </div>
+</nav>
+
+<!-- HERO SLIDESHOW -->
+<section id="hero">
+
+  <!-- Slide 1: Pokémon -->
+  <div class="slide slide-1 active" style="--slide-accent:#f5c518;">
+    <div class="slide-bg">
+      <div class="slide-art">
+        <svg width="100%" height="100%" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1400" height="800" fill="#0c0c0d"/>
+          <!-- Giant Pokéball silhouette right side -->
+          <circle cx="1050" cy="400" r="420" fill="none" stroke="#f5c518" stroke-width="0.5" opacity="0.15"/>
+          <circle cx="1050" cy="400" r="320" fill="none" stroke="#f5c518" stroke-width="0.5" opacity="0.1"/>
+          <circle cx="1050" cy="400" r="60" fill="none" stroke="#f5c518" stroke-width="1" opacity="0.3"/>
+          <line x1="630" y1="400" x2="1470" y2="400" stroke="#f5c518" stroke-width="0.5" opacity="0.2"/>
+          <!-- Pokéball top half fill hint -->
+          <path d="M630,400 A420,420 0 0 1 1470,400" fill="rgba(245,197,24,0.03)"/>
+          <!-- Floating card shapes -->
+          <rect x="800" y="120" width="90" height="130" rx="8" fill="none" stroke="#f5c518" stroke-width="0.5" opacity="0.18"/>
+          <rect x="920" y="80" width="90" height="130" rx="8" fill="none" stroke="#f5c518" stroke-width="0.5" opacity="0.12"/>
+          <rect x="1260" y="200" width="90" height="130" rx="8" fill="none" stroke="#f5c518" stroke-width="0.5" opacity="0.14"/>
+          <rect x="1300" y="500" width="90" height="130" rx="8" fill="none" stroke="#f5c518" stroke-width="0.5" opacity="0.1"/>
+          <!-- Grid lines -->
+          <line x1="700" y1="0" x2="700" y2="800" stroke="rgba(245,197,24,0.04)" stroke-width="1"/>
+          <line x1="900" y1="0" x2="900" y2="800" stroke="rgba(245,197,24,0.04)" stroke-width="1"/>
+          <line x1="0" y1="200" x2="1400" y2="200" stroke="rgba(245,197,24,0.03)" stroke-width="1"/>
+          <line x1="0" y1="600" x2="1400" y2="600" stroke="rgba(245,197,24,0.03)" stroke-width="1"/>
+          <!-- Electric bolts -->
+          <polyline points="1100,150 1080,220 1110,220 1080,300" fill="none" stroke="#f5c518" stroke-width="1.5" opacity="0.25"/>
+          <polyline points="1200,500 1185,560 1210,560 1185,630" fill="none" stroke="#f5c518" stroke-width="1" opacity="0.18"/>
+        </svg>
+      </div>
+    </div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <div class="slide-franchise" style="--slide-accent:#f5c518;">Pokémon TCG</div>
+      <h1 class="slide-title">Twilight<br>Masquerade</h1>
+      <p class="slide-set">Scarlet &amp; Violet · Set SV06</p>
+      <p class="slide-desc">Stellar Tera-type Pokémon debut in dazzling new art treatments. Chase Special Illustration Rares and the rarest Hyper Rares in the series.</p>
+      <div class="slide-actions">
+        <button class="btn-solid" style="background:#f5c518;">Open Pack — $5.49</button>
+        <button class="btn-ghost">View All Cards</button>
+      </div>
+    </div>
+    <div class="slide-strip">
+      <div class="strip-stat"><span class="strip-val">10</span>Cards / Pack</div>
+      <div class="strip-stat"><span class="strip-val">3%</span>SIR Rate</div>
+      <div class="strip-stat"><span class="strip-val">167</span>Total Cards</div>
+    </div>
+  </div>
+
+  <!-- Slide 2: Yu-Gi-Oh! -->
+  <div class="slide slide-2" style="--slide-accent:#b39ddb;">
+    <div class="slide-bg">
+      <div class="slide-art">
+        <svg width="100%" height="100%" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1400" height="800" fill="#0c0c0d"/>
+          <!-- Millennium Eye symbol -->
+          <ellipse cx="1050" cy="400" rx="280" ry="200" fill="none" stroke="#b39ddb" stroke-width="0.5" opacity="0.15"/>
+          <ellipse cx="1050" cy="400" rx="60" ry="60" fill="none" stroke="#b39ddb" stroke-width="0.8" opacity="0.25"/>
+          <circle cx="1050" cy="400" r="20" fill="rgba(179,157,219,0.08)"/>
+          <!-- Rays from eye -->
+          <line x1="1050" y1="200" x2="1050" y2="60" stroke="#b39ddb" stroke-width="0.5" opacity="0.15"/>
+          <line x1="1050" y1="600" x2="1050" y2="740" stroke="#b39ddb" stroke-width="0.5" opacity="0.15"/>
+          <line x1="850" y1="400" x2="710" y2="400" stroke="#b39ddb" stroke-width="0.5" opacity="0.12"/>
+          <line x1="1250" y1="400" x2="1390" y2="400" stroke="#b39ddb" stroke-width="0.5" opacity="0.12"/>
+          <line x1="908" y1="258" x2="810" y2="160" stroke="#b39ddb" stroke-width="0.5" opacity="0.1"/>
+          <line x1="1192" y1="258" x2="1290" y2="160" stroke="#b39ddb" stroke-width="0.5" opacity="0.1"/>
+          <line x1="908" y1="542" x2="810" y2="640" stroke="#b39ddb" stroke-width="0.5" opacity="0.1"/>
+          <line x1="1192" y1="542" x2="1290" y2="640" stroke="#b39ddb" stroke-width="0.5" opacity="0.1"/>
+          <!-- Card silhouettes -->
+          <rect x="830" y="100" width="80" height="115" rx="6" fill="rgba(179,157,219,0.04)" stroke="#b39ddb" stroke-width="0.5" opacity="0.2"/>
+          <rect x="1240" y="540" width="80" height="115" rx="6" fill="rgba(179,157,219,0.04)" stroke="#b39ddb" stroke-width="0.5" opacity="0.15"/>
+          <!-- Stars scattered -->
+          <circle cx="940" cy="160" r="2" fill="#b39ddb" opacity="0.3"/>
+          <circle cx="1160" cy="640" r="2" fill="#b39ddb" opacity="0.3"/>
+          <circle cx="1350" cy="300" r="1.5" fill="#b39ddb" opacity="0.25"/>
+          <circle cx="780" cy="550" r="1.5" fill="#b39ddb" opacity="0.2"/>
+          <!-- Pyramid triangle hint -->
+          <polygon points="1050,120 820,600 1280,600" fill="none" stroke="#b39ddb" stroke-width="0.4" opacity="0.1"/>
+        </svg>
+      </div>
+    </div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <div class="slide-franchise" style="--slide-accent:#b39ddb;">Yu-Gi-Oh!</div>
+      <h1 class="slide-title">Phantom<br>Nightmare</h1>
+      <p class="slide-set">Booster Set · PHNI</p>
+      <p class="slide-desc">Phantom Knights charge into battle. New Quarter Century Secret Rares and explosive Extra Deck strategies await those bold enough to duel.</p>
+      <div class="slide-actions">
+        <button class="btn-solid" style="background:#b39ddb;color:#0c0c0d;">Open Pack — $4.29</button>
+        <button class="btn-ghost">View All Cards</button>
+      </div>
+    </div>
+    <div class="slide-strip">
+      <div class="strip-stat"><span class="strip-val">9</span>Cards / Pack</div>
+      <div class="strip-stat"><span class="strip-val">1%</span>ScR Rate</div>
+      <div class="strip-stat"><span class="strip-val">101</span>Total Cards</div>
+    </div>
+  </div>
+
+  <!-- Slide 3: Magic The Gathering -->
+  <div class="slide slide-3" style="--slide-accent:#3b9eff;">
+    <div class="slide-bg">
+      <div class="slide-art">
+        <svg width="100%" height="100%" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1400" height="800" fill="#0c0c0d"/>
+          <!-- MTG pentagon (5 colors) -->
+          <polygon points="1050,140 1290,310 1200,590 900,590 810,310" fill="none" stroke="#3b9eff" stroke-width="0.6" opacity="0.15"/>
+          <!-- Inner pentagon -->
+          <polygon points="1050,260 1180,350 1135,490 965,490 920,350" fill="none" stroke="#3b9eff" stroke-width="0.5" opacity="0.12"/>
+          <!-- Mana color dots -->
+          <circle cx="1050" cy="155" r="10" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/>
+          <circle cx="1280" cy="320" r="10" fill="rgba(59,158,255,0.07)" stroke="#3b9eff" stroke-width="0.5" opacity="0.4"/>
+          <circle cx="1200" cy="600" r="10" fill="rgba(0,180,80,0.07)" stroke="#00b450" stroke-width="0.5" opacity="0.3"/>
+          <circle cx="900" cy="600" r="10" fill="rgba(255,80,80,0.07)" stroke="#ff5050" stroke-width="0.5" opacity="0.3"/>
+          <circle cx="820" cy="320" r="10" fill="rgba(180,120,60,0.07)" stroke="#b4783c" stroke-width="0.5" opacity="0.3"/>
+          <!-- Large card stack on right -->
+          <rect x="1100" y="150" width="110" height="160" rx="8" fill="rgba(59,158,255,0.04)" stroke="#3b9eff" stroke-width="0.5" opacity="0.2"/>
+          <rect x="1115" y="163" width="110" height="160" rx="8" fill="rgba(59,158,255,0.03)" stroke="#3b9eff" stroke-width="0.4" opacity="0.15"/>
+          <rect x="1130" y="176" width="110" height="160" rx="8" fill="rgba(59,158,255,0.03)" stroke="#3b9eff" stroke-width="0.3" opacity="0.1"/>
+          <!-- Orbits -->
+          <circle cx="1050" cy="400" r="300" fill="none" stroke="rgba(59,158,255,0.05)" stroke-width="80"/>
+        </svg>
+      </div>
+    </div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <div class="slide-franchise" style="--slide-accent:#3b9eff;">Magic: The Gathering</div>
+      <h1 class="slide-title">Outlaws of<br>Thunder Junction</h1>
+      <p class="slide-set">Play Booster · OTJ</p>
+      <p class="slide-desc">The multiverse goes west. Outlaws, heists, and brand-new mechanics collide across vast desert planes. Every pack hides a Mythic waiting to be drawn.</p>
+      <div class="slide-actions">
+        <button class="btn-solid" style="background:#3b9eff;">Open Pack — $6.99</button>
+        <button class="btn-ghost">View All Cards</button>
+      </div>
+    </div>
+    <div class="slide-strip">
+      <div class="strip-stat"><span class="strip-val">14</span>Cards / Pack</div>
+      <div class="strip-stat"><span class="strip-val">7%</span>Mythic Rate</div>
+      <div class="strip-stat"><span class="strip-val">271</span>Total Cards</div>
+    </div>
+  </div>
+
+  <!-- Slide 4: One Piece -->
+  <div class="slide slide-4" style="--slide-accent:#e8192c;">
+    <div class="slide-bg">
+      <div class="slide-art">
+        <svg width="100%" height="100%" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1400" height="800" fill="#0c0c0d"/>
+          <!-- Skull crossbones / Jolly Roger abstract -->
+          <circle cx="1050" cy="360" r="160" fill="none" stroke="#e8192c" stroke-width="0.6" opacity="0.18"/>
+          <circle cx="1050" cy="360" r="80" fill="rgba(232,25,44,0.04)" stroke="#e8192c" stroke-width="0.5" opacity="0.2"/>
+          <!-- Crossbones X shape -->
+          <line x1="870" y1="180" x2="1230" y2="540" stroke="#e8192c" stroke-width="0.6" opacity="0.12"/>
+          <line x1="1230" y1="180" x2="870" y2="540" stroke="#e8192c" stroke-width="0.6" opacity="0.12"/>
+          <!-- Wave lines bottom -->
+          <path d="M600,700 Q700,660 800,700 Q900,740 1000,700 Q1100,660 1200,700 Q1300,740 1400,700" fill="none" stroke="#e8192c" stroke-width="0.6" opacity="0.12"/>
+          <path d="M600,720 Q700,680 800,720 Q900,760 1000,720 Q1100,680 1200,720 Q1300,760 1400,720" fill="none" stroke="#e8192c" stroke-width="0.4" opacity="0.08"/>
+          <!-- Stars (Going Merry) -->
+          <circle cx="950" cy="160" r="2" fill="#e8192c" opacity="0.35"/>
+          <circle cx="1150" cy="200" r="1.5" fill="#e8192c" opacity="0.25"/>
+          <circle cx="1300" cy="300" r="2" fill="#e8192c" opacity="0.3"/>
+          <circle cx="780" cy="500" r="1.5" fill="#e8192c" opacity="0.2"/>
+          <!-- Card silhouettes vertical -->
+          <rect x="1200" y="100" width="85" height="120" rx="7" fill="none" stroke="#e8192c" stroke-width="0.5" opacity="0.2"/>
+          <rect x="1300" y="440" width="85" height="120" rx="7" fill="none" stroke="#e8192c" stroke-width="0.5" opacity="0.15"/>
+          <!-- Ring glow -->
+          <circle cx="1050" cy="360" r="250" fill="none" stroke="#e8192c" stroke-width="40" opacity="0.03"/>
+        </svg>
+      </div>
+    </div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <div class="slide-franchise" style="--slide-accent:#e8192c;">One Piece TCG</div>
+      <h1 class="slide-title">Emperors in<br>the New World</h1>
+      <p class="slide-set">Booster Pack · OP-07</p>
+      <p class="slide-desc">The Four Emperors command the high seas. Pull Secret Parallels of Big Mom, Shanks, and Blackbeard — the most sought-after cards in the game today.</p>
+      <div class="slide-actions">
+        <button class="btn-solid" style="background:#e8192c;">Open Pack — $5.49</button>
+        <button class="btn-ghost">View All Cards</button>
+      </div>
+    </div>
+    <div class="slide-strip">
+      <div class="strip-stat"><span class="strip-val">12</span>Cards / Pack</div>
+      <div class="strip-stat"><span class="strip-val">4%</span>Secret PR</div>
+      <div class="strip-stat"><span class="strip-val">121</span>Total Cards</div>
+    </div>
+  </div>
+
+  <!-- Slide 5: Disney Lorcana -->
+  <div class="slide slide-5" style="--slide-accent:#d966cc;">
+    <div class="slide-bg">
+      <div class="slide-art">
+        <svg width="100%" height="100%" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1400" height="800" fill="#0c0c0d"/>
+          <!-- Magic wand star burst -->
+          <circle cx="1050" cy="380" r="8" fill="rgba(217,102,204,0.2)"/>
+          <!-- Sparkle lines from center -->
+          <line x1="1050" y1="380" x2="1050" y2="160" stroke="#d966cc" stroke-width="0.6" opacity="0.15"/>
+          <line x1="1050" y1="380" x2="1050" y2="600" stroke="#d966cc" stroke-width="0.6" opacity="0.15"/>
+          <line x1="1050" y1="380" x2="830" y2="380" stroke="#d966cc" stroke-width="0.6" opacity="0.12"/>
+          <line x1="1050" y1="380" x2="1270" y2="380" stroke="#d966cc" stroke-width="0.6" opacity="0.12"/>
+          <line x1="1050" y1="380" x2="894" y2="224" stroke="#d966cc" stroke-width="0.5" opacity="0.1"/>
+          <line x1="1050" y1="380" x2="1206" y2="224" stroke="#d966cc" stroke-width="0.5" opacity="0.1"/>
+          <line x1="1050" y1="380" x2="894" y2="536" stroke="#d966cc" stroke-width="0.5" opacity="0.1"/>
+          <line x1="1050" y1="380" x2="1206" y2="536" stroke="#d966cc" stroke-width="0.5" opacity="0.1"/>
+          <!-- Concentric rings (enchanted glow) -->
+          <circle cx="1050" cy="380" r="120" fill="none" stroke="#d966cc" stroke-width="0.5" opacity="0.12"/>
+          <circle cx="1050" cy="380" r="200" fill="none" stroke="#d966cc" stroke-width="0.5" opacity="0.08"/>
+          <circle cx="1050" cy="380" r="300" fill="none" stroke="#d966cc" stroke-width="0.4" opacity="0.06"/>
+          <!-- Star sparkles scattered -->
+          <polygon points="950,180 955,165 960,180 975,180 963,190 968,205 955,195 942,205 947,190 935,180" fill="rgba(217,102,204,0.15)" stroke="#d966cc" stroke-width="0.5" opacity="0.3"/>
+          <polygon points="1280,280 1283,272 1286,280 1294,280 1288,285 1290,293 1283,288 1276,293 1278,285 1272,280" fill="rgba(217,102,204,0.1)" stroke="#d966cc" stroke-width="0.5" opacity="0.25"/>
+          <circle cx="1180" cy="160" r="3" fill="#d966cc" opacity="0.3"/>
+          <circle cx="870" cy="560" r="2" fill="#d966cc" opacity="0.25"/>
+          <circle cx="1320" cy="500" r="2" fill="#d966cc" opacity="0.2"/>
+          <!-- Card frames - enchanted style -->
+          <rect x="1160" y="180" width="90" height="130" rx="8" fill="none" stroke="#d966cc" stroke-width="0.5" opacity="0.2"/>
+          <rect x="1280" y="420" width="90" height="130" rx="8" fill="none" stroke="#d966cc" stroke-width="0.4" opacity="0.15"/>
+        </svg>
+      </div>
+    </div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <div class="slide-franchise" style="--slide-accent:#d966cc;">Disney Lorcana</div>
+      <h1 class="slide-title">Ursula's<br>Return</h1>
+      <p class="slide-set">Into the Inklands · Set 4</p>
+      <p class="slide-desc">The sea witch rises once more. Enchanted parallel foils of beloved Disney icons shimmer with a beauty unlike any card in print — collector's dream.</p>
+      <div class="slide-actions">
+        <button class="btn-solid" style="background:#d966cc;">Open Pack — $5.99</button>
+        <button class="btn-ghost">View All Cards</button>
+      </div>
+    </div>
+    <div class="slide-strip">
+      <div class="strip-stat"><span class="strip-val">12</span>Cards / Pack</div>
+      <div class="strip-stat"><span class="strip-val">2%</span>Enchanted</div>
+      <div class="strip-stat"><span class="strip-val">204</span>Total Cards</div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="slide-controls">
+    <div class="slide-dots">
+      <div class="dot active" data-idx="0"></div>
+      <div class="dot" data-idx="1"></div>
+      <div class="dot" data-idx="2"></div>
+      <div class="dot" data-idx="3"></div>
+      <div class="dot" data-idx="4"></div>
+    </div>
+    <div class="slide-arrows">
+      <button class="arrow-btn" id="prevBtn">&#8592;</button>
+      <button class="arrow-btn" id="nextBtn">&#8594;</button>
+    </div>
+    <span class="slide-counter" id="slideCounter">01 / 05</span>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <div class="ticker-item"><strong>Pokémon</strong> Twilight Masquerade — In Stock <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Yu-Gi-Oh!</strong> Phantom Nightmare — ScR Pulls <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>MTG</strong> Outlaws of Thunder Junction — Play Booster <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>One Piece</strong> OP-07 — Emperor Parallels Live <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Lorcana</strong> Ursula's Return — Limited Stock <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Dragon Ball Super</strong> Set 24 — God Rares Dropping <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Flesh &amp; Blood</strong> Part the Mistveil — New Heroes <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Digimon</strong> Digital Hazard EX-02 — Beelzemon SR <div class="ticker-dot"></div></div>
+    <!-- duplicate for loop -->
+    <div class="ticker-item"><strong>Pokémon</strong> Twilight Masquerade — In Stock <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Yu-Gi-Oh!</strong> Phantom Nightmare — ScR Pulls <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>MTG</strong> Outlaws of Thunder Junction — Play Booster <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>One Piece</strong> OP-07 — Emperor Parallels Live <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Lorcana</strong> Ursula's Return — Limited Stock <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Dragon Ball Super</strong> Set 24 — God Rares Dropping <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Flesh &amp; Blood</strong> Part the Mistveil — New Heroes <div class="ticker-dot"></div></div>
+    <div class="ticker-item"><strong>Digimon</strong> Digital Hazard EX-02 — Beelzemon SR <div class="ticker-dot"></div></div>
+  </div>
+</div>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-block">
+        <div class="stat-num">8<span>+</span></div>
+        <div class="stat-label">TCG Franchises</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">2M<span>+</span></div>
+        <div class="stat-label">Packs Sold</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">48h</div>
+        <div class="stat-label">Avg. Delivery</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-label">Authentic Sealed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKS -->
+<section id="packs">
+  <div class="container">
+    <div class="packs-header reveal">
+      <div class="packs-header-left">
+        <p class="s-label">Shop</p>
+        <h2 class="s-title">Shop by Franchise</h2>
+        <p class="s-sub" style="margin-top:0.6rem;">Every pack authentic, sealed, and shipped same day.</p>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-tab on" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="pokemon">Pokémon</button>
+        <button class="filter-tab" data-filter="yugioh">Yu-Gi-Oh!</button>
+        <button class="filter-tab" data-filter="mtg">MTG</button>
+        <button class="filter-tab" data-filter="other">Others</button>
+      </div>
+    </div>
+
+    <div class="packs-grid">
+
+      <!-- Pokémon -->
+      <div class="pack-card reveal" data-cat="pokemon" style="--pack-color:#f5c518;--pack-bg:rgba(245,197,24,0.1);">
+        <div class="pack-head">
+          <div class="pack-logo-icon">⚡</div>
+          <span class="pack-new-badge">New</span>
+        </div>
+        <div class="pack-franchise">Pokémon TCG</div>
+        <div class="pack-name">Twilight Masquerade</div>
+        <div class="pack-set">Scarlet &amp; Violet · SV06</div>
+        <div class="pack-stats">
+          <div class="pack-stat"><span class="pack-stat-val">10</span><span class="pack-stat-lbl">Cards</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">3%</span><span class="pack-stat-lbl">SIR Rate</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">167</span><span class="pack-stat-lbl">Set Size</span></div>
+        </div>
+        <div class="pack-footer">
+          <div><div class="pack-price">$5.49</div><div class="pack-price-sub">per pack</div></div>
+          <button class="pack-add-btn" style="--pack-color:#f5c518;">+</button>
+        </div>
+      </div>
+
+      <!-- Yu-Gi-Oh! -->
+      <div class="pack-card reveal" data-cat="yugioh" style="--pack-color:#b39ddb;--pack-bg:rgba(179,157,219,0.1);">
+        <div class="pack-head">
+          <div class="pack-logo-icon">👁️</div>
+          <span class="pack-new-badge">New</span>
+        </div>
+        <div class="pack-franchise">Yu-Gi-Oh!</div>
+        <div class="pack-name">Phantom Nightmare</div>
+        <div class="pack-set">Booster Set · PHNI</div>
+        <div class="pack-stats">
+          <div class="pack-stat"><span class="pack-stat-val">9</span><span class="pack-stat-lbl">Cards</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">1%</span><span class="pack-stat-lbl">ScR Rate</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">101</span><span class="pack-stat-lbl">Set Size</span></div>
+        </div>
+        <div class="pack-footer">
+          <div><div class="pack-price">$4.29</div><div class="pack-price-sub">per pack</div></div>
+          <button class="pack-add-btn" style="--pack-color:#b39ddb;">+</button>
+        </div>
+      </div>
+
+      <!-- MTG -->
+      <div class="pack-card reveal" data-cat="mtg" style="--pack-color:#3b9eff;--pack-bg:rgba(59,158,255,0.1);">
+        <div class="pack-head">
+          <div class="pack-logo-icon">🔵</div>
+          <span class="pack-new-badge">Hot</span>
+        </div>
+        <div class="pack-franchise">Magic: The Gathering</div>
+        <div class="pack-name">Outlaws of Thunder Junction</div>
+        <div class="pack-set">Play Booster · OTJ</div>
+        <div class="pack-stats">
+          <div class="pack-stat"><span class="pack-stat-val">14</span><span class="pack-stat-lbl">Cards</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">7%</span><span class="pack-stat-lbl">Mythic</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">271</span><span class="pack-stat-lbl">Set Size</span></div>
+        </div>
+        <div class="pack-footer">
+          <div><div class="pack-price">$6.99</div><div class="pack-price-sub">per pack</div></div>
+          <button class="pack-add-btn" style="--pack-color:#3b9eff;">+</button>
+        </div>
+      </div>
+
+      <!-- Dragon Ball Super -->
+      <div class="pack-card reveal" data-cat="other" style="--pack-color:#ff6b00;--pack-bg:rgba(255,107,0,0.1);">
+        <div class="pack-head">
+          <div class="pack-logo-icon">🔮</div>
+        </div>
+        <div class="pack-franchise">Dragon Ball Super TCG</div>
+        <div class="pack-name">Perfect Combination</div>
+        <div class="pack-set">Booster Set 24 · B24</div>
+        <div class="pack-stats">
+          <div class="pack-stat"><span class="pack-stat-val">12</span><span class="pack-stat-lbl">Cards</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">2%</span><span class="pack-stat-lbl">God Rare</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">188</span><span class="pack-stat-lbl">Set Size</span></div>
+        </div>
+        <div class="pack-footer">
+          <div><div class="pack-price">$5.99</div><div class="pack-price-sub">per pack</div></div>
+          <button class="pack-add-btn" style="--pack-color:#ff6b00;">+</button>
+        </div>
+      </div>
+
+      <!-- One Piece -->
+      <div class="pack-card reveal" data-cat="other" style="--pack-color:#e8192c;--pack-bg:rgba(232,25,44,0.1);">
+        <div class="pack-head">
+          <div class="pack-logo-icon">☠️</div>
+          <span class="pack-new-badge">New</span>
+        </div>
+        <div class="pack-franchise">One Piece TCG</div>
+        <div class="pack-name">Emperors in the New World</div>
+        <div class="pack-set">Booster Pack · OP-07</div>
+        <div class="pack-stats">
+          <div class="pack-stat"><span class="pack-stat-val">12</span><span class="pack-stat-lbl">Cards</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">4%</span><span class="pack-stat-lbl">Secret PR</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">121</span><span class="pack-stat-lbl">Set Size</span></div>
+        </div>
+        <div class="pack-footer">
+          <div><div class="pack-price">$5.49</div><div class="pack-price-sub">per pack</div></div>
+          <button class="pack-add-btn" style="--pack-color:#e8192c;">+</button>
+        </div>
+      </div>
+
+      <!-- Flesh and Blood -->
+      <div class="pack-card reveal" data-cat="other" style="--pack-color:#e57373;--pack-bg:rgba(229,115,115,0.1);">
+        <div class="pack-head">
+          <div class="pack-logo-icon">⚔️</div>
+        </div>
+        <div class="pack-franchise">Flesh and Blood</div>
+        <div class="pack-name">Part the Mistveil</div>
+        <div class="pack-set">Booster Set · PTM</div>
+        <div class="pack-stats">
+          <div class="pack-stat"><span class="pack-stat-val">16</span><span class="pack-stat-lbl">Cards</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">0.5%</span><span class="pack-stat-lbl">Legendary</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">225</span><span class="pack-stat-lbl">Set Size</span></div>
+        </div>
+        <div class="pack-footer">
+          <div><div class="pack-price">$4.99</div><div class="pack-price-sub">per pack</div></div>
+          <button class="pack-add-btn" style="--pack-color:#e57373;">+</button>
+        </div>
+      </div>
+
+      <!-- Digimon -->
+      <div class="pack-card reveal" data-cat="other" style="--pack-color:#00c8c8;--pack-bg:rgba(0,200,200,0.08);">
+        <div class="pack-head">
+          <div class="pack-logo-icon">🌀</div>
+        </div>
+        <div class="pack-franchise">Digimon TCG</div>
+        <div class="pack-name">Digital Hazard</div>
+        <div class="pack-set">Expansion Set · EX-02</div>
+        <div class="pack-stats">
+          <div class="pack-stat"><span class="pack-stat-val">12</span><span class="pack-stat-lbl">Cards</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">5%</span><span class="pack-stat-lbl">Secret Rare</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">91</span><span class="pack-stat-lbl">Set Size</span></div>
+        </div>
+        <div class="pack-footer">
+          <div><div class="pack-price">$4.49</div><div class="pack-price-sub">per pack</div></div>
+          <button class="pack-add-btn" style="--pack-color:#00c8c8;">+</button>
+        </div>
+      </div>
+
+      <!-- Lorcana -->
+      <div class="pack-card reveal" data-cat="other" style="--pack-color:#d966cc;--pack-bg:rgba(217,102,204,0.1);">
+        <div class="pack-head">
+          <div class="pack-logo-icon">✨</div>
+          <span class="pack-new-badge">New</span>
+        </div>
+        <div class="pack-franchise">Disney Lorcana</div>
+        <div class="pack-name">Ursula's Return</div>
+        <div class="pack-set">Into the Inklands · Set 4</div>
+        <div class="pack-stats">
+          <div class="pack-stat"><span class="pack-stat-val">12</span><span class="pack-stat-lbl">Cards</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">2%</span><span class="pack-stat-lbl">Enchanted</span></div>
+          <div class="pack-stat"><span class="pack-stat-val">204</span><span class="pack-stat-lbl">Set Size</span></div>
+        </div>
+        <div class="pack-footer">
+          <div><div class="pack-price">$5.99</div><div class="pack-price-sub">per pack</div></div>
+          <button class="pack-add-btn" style="--pack-color:#d966cc;">+</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div style="margin-bottom:3rem;" class="reveal">
+      <p class="s-label">Platform</p>
+      <h2 class="s-title">Everything a collector needs</h2>
+    </div>
+    <div class="features-row reveal">
+      <div class="feat">
+        <div class="feat-num">01</div>
+        <div class="feat-title">Real-Time Pack Opening</div>
+        <div class="feat-text">Open digital packs with satisfying card-by-card reveals. Every pull is tracked, catalogued, and added instantly to your collection.</div>
+      </div>
+      <div class="feat">
+        <div class="feat-num">02</div>
+        <div class="feat-title">Live Trade Market</div>
+        <div class="feat-text">Buy, sell, and trade with millions of collectors. Prices update in real time. Every card holds real market value.</div>
+      </div>
+      <div class="feat">
+        <div class="feat-num">03</div>
+        <div class="feat-title">Cross-Platform Collection</div>
+        <div class="feat-text">Your collection syncs everywhere — browser, iOS, Android. Track value, condition, and want lists from any device.</div>
+      </div>
+    </div>
+    <div class="features-row reveal" style="margin-top:1px; border-top:none;">
+      <div class="feat">
+        <div class="feat-num">04</div>
+        <div class="feat-title">Tournament Play</div>
+        <div class="feat-text">Compete in weekly ranked events and seasonal championships. Win exclusive digital cards and real merchandise prizes.</div>
+      </div>
+      <div class="feat">
+        <div class="feat-num">05</div>
+        <div class="feat-title">Pull Rate Transparency</div>
+        <div class="feat-text">We publish exact pull rates for every set. No surprises — you know exactly what you're chasing before you open.</div>
+      </div>
+      <div class="feat">
+        <div class="feat-num">06</div>
+        <div class="feat-title">Same-Day Shipping</div>
+        <div class="feat-text">Physical packs ordered before 2pm ship same day. All cards are authentic, factory-sealed, and guaranteed.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div>
+        <p class="s-label" style="margin-bottom:1rem;">Get Started</p>
+        <h2 class="cta-title">The world's TCGs,<br>one <em>platform</em>.</h2>
+        <p class="cta-text">Join over 2 million collectors. Open your first pack free — no commitment, no credit card required. Your collection starts now.</p>
+        <div class="cta-actions">
+          <button class="btn-solid" style="background:var(--accent);color:var(--bg);">Claim Free Pack</button>
+          <button class="btn-ghost">Browse All Sets</button>
+        </div>
+        <p style="margin-top:1.2rem;font-size:0.75rem;color:var(--muted);">Free to join · 2M+ collectors · Authentic sealed product</p>
+      </div>
+      <div class="cta-visual">
+        <div class="cta-tile">
+          <div class="cta-tile-icon">⚡</div>
+          <div class="cta-tile-name">Pokémon TCG</div>
+          <div class="cta-tile-val">SV Twilight Masquerade</div>
+        </div>
+        <div class="cta-tile">
+          <div class="cta-tile-icon">👁️</div>
+          <div class="cta-tile-name">Yu-Gi-Oh!</div>
+          <div class="cta-tile-val">Phantom Nightmare</div>
+        </div>
+        <div class="cta-tile">
+          <div class="cta-tile-icon">🔵</div>
+          <div class="cta-tile-name">Magic: The Gathering</div>
+          <div class="cta-tile-val">Thunder Junction</div>
+        </div>
+        <div class="cta-tile">
+          <div class="cta-tile-icon">☠️</div>
+          <div class="cta-tile-name">One Piece TCG</div>
+          <div class="cta-tile-val">OP-07 Emperors</div>
+        </div>
+        <div class="cta-tile">
+          <div class="cta-tile-icon">✨</div>
+          <div class="cta-tile-name">Disney Lorcana</div>
+          <div class="cta-tile-val">Ursula's Return</div>
+        </div>
+        <div class="cta-tile">
+          <div class="cta-tile-icon">🔮</div>
+          <div class="cta-tile-name">Dragon Ball Super</div>
+          <div class="cta-tile-val">Perfect Combination</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Verus<span>TCG</span></div>
+  <ul class="footer-links">
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Collection</a></li>
+    <li><a href="#">Tournaments</a></li>
+    <li><a href="#">Market</a></li>
+    <li><a href="#">Support</a></li>
+  </ul>
+  <div class="footer-copy">© 2026 VerusTCG. All rights reserved.</div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
